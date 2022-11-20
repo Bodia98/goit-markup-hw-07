@@ -16,7 +16,7 @@
     }
 }
 
-.modal-close {
+.modal__close {
     width: 30px;
     height: 30px;
     background-color: var(--fourth-color);
@@ -31,15 +31,15 @@
     cursor: pointer;
 }
 
-.modal-close-icon {
+.modal__close-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    .modal-close:hover &,
-    .modal-close:focus & {
+    .modal__close:hover &,
+    .modal__close:focus & {
         fill: var(--secondary-color);
     }
 }
 
-.modal-title {
+.modal__title {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -49,7 +49,7 @@
     margin-bottom: 12px;
 }
 
-.modal-input {
+.form__input {
     width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -62,27 +62,27 @@
     }
 }
 
-.input-wrap {
+.form__input-wrap {
     position: relative;
     margin-bottom: 10px;
 }
 
-.textarea-wrap {
+.form__input-area {
     margin-bottom: 20px;
 }
 
-.modal-input-icon {
+.form__input-icon {
     position: absolute;
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    .modal-input:focus + & {
+    .form__input:focus + & {
         fill: var(--secondary-color);
     }
 }
 
-.input-label {
+.form__input-label {
     display: block;
     font-weight: 400;
     font-size: 12px;
@@ -92,7 +92,7 @@
     margin-bottom: 4px;
 }
 
-.modal-comment {
+.form__comment {
     display: block;
     width: 100%;
     height: 120px;
@@ -115,7 +115,7 @@
     }
 }
 
-.checkbox {
+.form__checkbox {
     display: flex;
     align-items: center;
     text-align: center;
@@ -123,7 +123,7 @@
     margin-bottom: 30px;
 }
 
-.checkbox-label {
+.checkbox__label {
     display: flex;
     align-items: center;
     font-weight: 400;
@@ -133,7 +133,7 @@
     color: var(--third-color);
 }
 
-.checkbox-span {
+.checkbox__span {
     width: 16px;
     height: 15px;
     border: 2px solid var(--main-color);
@@ -144,14 +144,14 @@
     justify-content: center;
     fill: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    .checkbox-input:checked + .checkbox-label > & {
+    .checkbox__input:checked + .checkbox__label > & {
         background-color: var(--secondary-color);
         border-color: transparent;
         fill: var(--fourth-color);
     }
 }
 
-.checkbox-link {
+.checkbox__link {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -161,7 +161,7 @@
     margin-left: 2px;
 }
 
-.modal-form-button {
+.modal__button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;

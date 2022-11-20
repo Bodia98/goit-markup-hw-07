@@ -4,8 +4,11 @@
     border-bottom: 1px solid #ECECEC;
 }
 
-.header-container {
+.header__container {
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
+    justify-content: space-between;
 }
 
 .nav {
@@ -13,18 +16,18 @@
     align-items: center;
 }
 
-.header-nav {
+.menu {
     display: flex;
     padding-left: 0;
     list-style: none;
     position: relative;
 }
 
-.header-nav .item+.item {
+.menu .menu__item+.menu__item {
     margin-left: 50px;
 }
 
-.header-item {
+.menu__item {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -37,7 +40,7 @@
     }
 }
 
-.header-item-studio {
+.menu__item-studio {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -56,7 +59,7 @@
     }
 }
 
-.header-item-portfolio {
+.menu__item-portfolio {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -75,19 +78,18 @@
     }
 }
 
-.header-contact {
+.header__contact {
     display: flex;
     align-items: center;
-    margin-left: auto;
     padding-left: 0;
     list-style: none;
 }
 
-.header-contact .item+.item {
+.contact .contact__item+.contact__item {
     margin-left: 50px;
 }
 
-.header-item-contact {
+.contact__item-link {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -103,7 +105,7 @@
     }
 }
 
-.contact-icon {
+.contact__icon {
     fill: currentColor;
     margin-right: 10px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
